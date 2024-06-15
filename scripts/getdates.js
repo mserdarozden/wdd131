@@ -2,14 +2,19 @@ function getCurrentYear() {
     return new Date().getFullYear();
   }
   
-  document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('currentYear').textContent = getCurrentYear();
-  });
-
   function getLastModified() {
-    return new Date(document.lastModified);
+    return new Date(document.lastModified).toLocaleString();
   }
-
+  
   document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('lastModified').textContent = getLastModified();
+    const currentYearElement = document.getElementById('currentYear');
+    const lastModifiedElement = document.getElementById('lastModified');
+    
+    if (currentYearElement) {
+      currentYearElement.textContent = getCurrentYear();
+    }
+    
+    if (lastModifiedElement) {
+      lastModifiedElement.textContent = getLastModified();
+    }
   });
