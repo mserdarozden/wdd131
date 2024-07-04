@@ -81,15 +81,11 @@ header h1 {
 .open a {
 	display: block;
 }
-
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
   
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1 rem;
+    grid-gap: 1rem;
     padding: 0 5rem;
 }
 
