@@ -25,11 +25,18 @@
         border-bottom: 1px solid #ccc; 
     }
 
-    .bottom-section .section-title::after {
-        content: url(icon.png);
+    .container-weather .section-title::after {
+        content: url("../images/weather_clouds_sun_sunny_icon.svg");
         display: inline-block;
-        margin-left: 10px; /* Adjust as needed */
-        width: 24px; /* Adjust as needed */
-        height: 24px; /* Adjust as needed */
+        margin-left: 10px; 
+        width: 50px; 
+        height: auto;
+    }
+    .weather-icon {
+        display: none;
+    }
+
+    .container-content .section-title {
+        padding-bottom: 10px;
     }
 }

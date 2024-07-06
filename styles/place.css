@@ -61,8 +61,6 @@ footer p {
     align-items: center;
 }
 
-
-
 .weather-icon {
     width: 100px;
     height: auto;
@@ -84,4 +82,10 @@ footer p {
 p {
     margin: 0;
     padding: 2px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
