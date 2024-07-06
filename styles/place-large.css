@@ -1,0 +1,35 @@
+@media screen and (min-width: 500px) {
+    .container-content {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        background-color: white;
+        opacity: 0.8;
+        padding: 0 15px;
+    }
+
+    .container-weather {
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        background-color: white;
+        opacity: 0.8;
+        padding: 0 15px;
+    }
+
+    main {
+        position: relative;
+    }
+
+    h2 {
+        border-bottom: 1px solid #ccc; 
+    }
+
+    .bottom-section .section-title::after {
+        content: url(icon.png);
+        display: inline-block;
+        margin-left: 10px; /* Adjust as needed */
+        width: 24px; /* Adjust as needed */
+        height: 24px; /* Adjust as needed */
+    }
+}

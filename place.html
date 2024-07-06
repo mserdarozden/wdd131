@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Place - Serdar Ozden</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Serdar Ozden | W03 Assignment: Place">
+        <meta name="author" content="Serdar Ozden">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>Paris</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/eiffel-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/eiffel-medium.webp" media="(min-width: 500px)">
+                <img src="images/eiffel-small.webp" alt="Eiffel Tower" width="500" height="250">
+            </picture>
+        </div>
+        <div class="container-content">
+            <section class="top-section">
+                <h2 class="section-title">Data</h2>
+                <div class="section-content">
+                    <div class="section-content-heading">
+                        <p>Area:</p>
+                        <p>Population:</p>
+                        <p>Capital:</p>
+                        <p>Languages:</p>
+                        <p>Currency:</p>
+                        <p>Time Zone:</p>
+                        <p>Calling Code:</p>
+                        <p>Internet TLD:</p>
+                    </div>
+                    <div class="section-content-content">
+                        <p>105.4 sq km</p>
+                        <p>2,148,271</p>
+                        <p>Paris</p>
+                        <p>French</p>
+                        <p>Euro (€)</p>
+                        <p>UTC+1</p>
+                        <p>+33</p>
+                        <p>.fr</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-weather">
+            <section class="bottom-section">
+                <h2 class="section-title">Weather</h2>
+                <img class="weather-icon" src="images/weather_clouds_sun_sunny_icon.svg" alt="Partly Cloudy">
+                <div class="section-content">
+                    <div class="section-content-heading">
+                        <p>Temperature:</p>
+                        <p>Conditions:</p>
+                        <p>Wind:</p>
+                        <p>Wind Chill:</p>
+                    </div>
+                    <div class="section-content-content">
+                        <p>15°C</p>
+                        <p>Partly Cloudy</p>
+                        <p>10 km/h</p>
+                        <p>14°C</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    </main>
+    <footer>
+        <footer>
+            <p>© <span id="currentYear"></span> | Serdar Özden | Turkey</p>
+            <p> Last Modified on: <span id="lastModified"></span></p>
+        </footer>
+    </footer>
+</body>
+</html>
