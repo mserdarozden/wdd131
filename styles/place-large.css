@@ -34,10 +34,6 @@
         display: none;
     }
 
-    .container-content .section-title {
-        padding-bottom: 10px;
-    }
-
     .hero {
         background-color: var(--background-color);
       }
