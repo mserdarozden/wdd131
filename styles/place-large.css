@@ -26,10 +26,9 @@
     }
 
     .container-weather .section-title::after {
-        content: url("../images/icon.png");
+        content: "⛅️";
         display: inline-block;
         margin-left: 10px; 
-        height: auto;
     }
     .weather-icon {
         display: none;
