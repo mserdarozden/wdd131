@@ -26,10 +26,9 @@
     }
 
     .container-weather .section-title::after {
-        content: url("../images/weather_clouds_sun_sunny_icon.svg");
+        content: url("../images/icon.png");
         display: inline-block;
         margin-left: 10px; 
-        width: 50px; 
         height: auto;
     }
     .weather-icon {
