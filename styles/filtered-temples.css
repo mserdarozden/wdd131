@@ -120,6 +120,10 @@ h2 {
     font-size: larger;
 }
 
+.main-h2 {
+    font-size: xx-large;
+}
+
 footer {
     display: flex;
     justify-content: center;
