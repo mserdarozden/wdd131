@@ -30,7 +30,6 @@ thead tr {
 
 thead tr:first-child {
 	background-color: var(--back);
-    padding: 100px;
 }
 
 th, td {
