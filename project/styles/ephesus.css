@@ -121,6 +121,7 @@ main {
 
 .card h2 {
     margin: 0 0 8px 0;
+    font-size: medium;
 }
 
 
@@ -235,5 +236,9 @@ footer p {
 
 .map-content p {
     margin: 0.5rem;
+}
+
+.weather-card-header {
+    color: var(--persimmon);
 }
 
