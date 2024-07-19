@@ -1,0 +1,87 @@
+@media screen and (min-width: 600px) {
+    #discoverCardsContainer,
+    .weather-cards-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .card p {
+        font-size: medium;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+    .ham-nav {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    header nav a {
+        color: white;
+        text-align: center;
+        display: block;
+        padding: 1rem;
+        margin: auto 0;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 1rem;
+        transition: color 0.3s ease, background-color 0.3s ease;
+      }
+
+      header nav a:hover {
+        background-color: white;
+        color: black; 
+      }
+
+      .grid-container-large-view {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .container-about {
+        grid-column: 1/4;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;;
+    }
+    
+    .container-things  {
+        grid-column: 4/6;
+        border-right: 1px solid #ccc;
+    }
+
+    .container-map {
+        grid-column: 1/4;
+    }
+
+    .container-adress {
+        grid-column: 4/6;
+    }
+
+    .container-adress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .weather-container {
+        top: 20px;
+        left: 50px;
+    }
+
+    .map-content {
+        margin-top: 0;
+    }
+}

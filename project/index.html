@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="An Ancient City Travel Guide: Ephesus | Serdar Ozden">
+    <meta name="author" content="Serdar Ozden">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ephesus.css">
+    <link rel="stylesheet" href="styles/ephesus-large.css">
+    <script src="scripts/ephesus.js" defer></script>
+</head>
+<body>
+    <header>
+        <button id="menu"></button>
+        <h1>Ephesus</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="ham-nav">
+            <a href="index.html" >Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+        <div class="main-image">
+            <picture>
+                <source srcset="images/ephesus-main-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/ephesus-main-medium.webp" media="(min-width: 500px)">
+                <img src="images/ephesus-main-small.webp" alt="Eiffel Tower" width="500" height="250">
+            </picture>
+        </div>
+        <div class="grid-container-large-view">
+            <div class="container-about">
+                <section class="top-section">
+                    <h2 class="section-title">About Ephesus</h2>
+                    <div class="section-content">
+                        <p>Welcome to the captivating world of Ephesus, a treasure trove of ancient wonders and historical significance. Nestled in western Turkey, Ephesus is an archaeological site that transports you back in time to the days of the Roman Empire. Immerse yourself in the grandeur of this once-thriving city as you explore its well-preserved ruins and marvel at the architectural marvels that have withstood the test of time.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container-things">
+                <section class="bottom-section">
+                    <h2 class="section-title">Things to Know</h2>
+                    <div class="section-content">
+                        <div class="section-content-heading">
+                            <p>Best Time to Visit:</p>
+                            <p>Official Name:</p>
+                            <p>Region:</p>
+                            <p>Continent:</p>
+                            <p>Area:</p>
+                            <p>Time Zone:</p>
+                        </div>
+                        <div class="section-content-content">
+                            <p>All Year Round</p>
+                            <p>Ancient City of Ephesus</p>
+                            <p>Aegean</p>
+                            <p>Asia</p>
+                            <p>7 km²</p>
+                            <p>UTC+3</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> | Serdar Özden | Turkey</p>
+        <p> Last Modified on: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

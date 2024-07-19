@@ -1,0 +1,239 @@
+body {
+    max-width: 900px;
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --background-color: #002626ff;
+    --midnight-green: #0e4749ff;
+    --yellow-green: #95c623ff;
+    --persimmon: #e55812ff;
+    --alabaster: #efe7daff;
+}
+
+
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color);;
+    height: 100px;
+}
+
+header nav a {
+    display: none;
+}
+
+header h1 {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: larger;
+}
+
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+.ham-nav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--background-color);
+	color: #fff;
+}
+
+.ham-nav a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+.ham-nav a:hover {
+    background-color: white;
+    color: black; 
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+  
+#discoverCardsContainer,
+.weather-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+main {
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: black;
+
+}
+
+.card h2 {
+    margin: 0 0 8px 0;
+}
+
+
+
+.card p {
+    font-size: medium;
+    margin: 2px 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: x-large;
+}
+
+.main-h2 {
+    font-size: xx-large;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--background-color);
+    height: 80px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+.main-image img,
+.place-img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .place-para {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .container-about{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ccc; 
+}
+
+.container-things {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-content-heading {
+    text-align: right;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+.section-content-content {
+    text-align: left;
+    padding: 0 0.5rem 0.5rem 0;
+}
+
+.container-about p {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.container-things p {
+    margin: 0;
+    padding: 2px;
+}
+
+.bottom-section {
+    padding-bottom: 1rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.map-content p {
+    margin: 0.5rem;
+}
+

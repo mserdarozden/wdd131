@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <meta name="description" content="Ephesus Weather">
+        <meta name="author" content="Serdar Ozden">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/ephesus.css">
+        <link rel="stylesheet" href="styles/ephesus-large.css">
+        <script src="scripts/ephesus.js" defer></script>
+    </head>
+<body>
+    <header>
+        <button id="menu"></button>
+        <h1>Location</h1>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="ham-nav">
+            <a href="index.html" >Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+        <div class="main-image">
+            <picture>
+                <source srcset="images/map-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/map-medium.webp" media="(min-width: 500px)">
+                <img src="images/map-small.webp" alt="Eiffel Tower" width="500" height="250">
+            </picture>
+        </div>
+        <div>
+            <h2>Adress</h2>
+        </div>
+        <div class="grid-container-large-view">
+            <div class="container-map">
+                <section class="top-section">
+                    <div class="section-content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12585.914268558443!2d27.34290413551218!3d37.9426179049348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1721344981645!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+            <div class="container-adress">
+                <section class="bottom-section">
+                    <div class="map-content">
+                        <p>Atatürk, Ancient Ephesus</p>
+                        <p>Acarlar, Meryem Ana Yolu</p>
+                        <p>35920</p>
+                        <p>Selçuk/İzmir</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> | Serdar Özden | Turkey</p>
+        <p> Last Modified on: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

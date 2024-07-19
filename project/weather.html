@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <meta name="description" content="Ephesus Weather">
+        <meta name="author" content="Serdar Ozden">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/ephesus.css">
+        <link rel="stylesheet" href="styles/ephesus-large.css">
+        <script src="scripts/ephesus.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
+    </head>
+<body>
+    <header>
+        <button id="menu"></button>
+        <h1>Weather</h1>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="ham-nav">
+            <a href="index.html" >Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="weather.html" >Weather</a>
+            <a href="location.html" >Location</a>
+        </nav>
+        <div class="main-image">
+            <picture>
+                <source srcset="images/weather-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/weather-medium.webp" media="(min-width: 500px)">
+                <img src="images/weather-small.webp" alt="Eiffel Tower" width="500" height="250">
+            </picture>
+        </div>
+        <div class="weather-container" id="weather">
+            <div class="card">
+                <p id="temp">15°C</p>
+                <p id="desc">Sunny</p>
+                <p id="min-temp">14°C</p>
+                <p id="max-temp">19°C</p>
+            </div>
+            
+        </div>
+        <h2>Annual Average Weather</h2>
+        <div class="weather-cards-container">
+            <div class="card">
+                <h3>January</h3>
+                <p>🌡️ 7 °C</p>
+                <p>☀️ 6 hours per day</p>
+                <p>🌧️ 124 mm per month</p>
+                <p>💧 77 % average</p>
+                <p>💨 9 mph average</p>
+            </div>
+            <div class="card">
+                <h3>February</h3>
+                <p>🌡️ 8 °C</p>
+                <p>☀️ 7 hours per day</p>
+                <p>🌧️ 105 mm per month</p>
+                <p>💧 74 % average</p>
+                <p>💨 10 mph average</p>
+            </div>
+            <div class="card">
+                <h3>March</h3>
+                <p>🌡️ 10 °C</p>
+                <p>☀️ 9 hours per day</p>
+                <p>🌧️ 78 mm per month</p>
+                <p>💧 70 % average</p>
+                <p>💨 9 mph average</p>
+            </div>
+            <div class="card">
+                <h3>April</h3>
+                <p>🌡️ 14 °C</p>
+                <p>☀️ 10 hours per day</p>
+                <p>🌧️ 56 mm per month</p>
+                <p>💧 67 % average</p>
+                <p>💨 8 mph average</p>
+            </div>
+            <div class="card">
+                <h3>May</h3>
+                <p>🌡️ 19 °C</p>
+                <p>☀️ 12 hours per day</p>
+                <p>🌧️ 29 mm per month</p>
+                <p>💧 59 % average</p>
+                <p>💨 7 mph average</p>
+            </div>
+            <div class="card">
+                <h3>June</h3>
+                <p>🌡️ 24 °C</p>
+                <p>☀️ 13 hours per day</p>
+                <p>🌧️ 10 mm per month</p>
+                <p>💧 46 % average</p>
+                <p>💨 8 mph average</p>
+            </div>
+            <div class="card">
+                <h3>July</h3>
+                <p>🌡️ 28 °C</p>
+                <p>☀️ 13 hours per day</p>
+                <p>🌧️ 1 mm per month</p>
+                <p>💧 39 % average</p>
+                <p>💨 10 mph average</p>
+            </div>
+            <div class="card">
+                <h3>August</h3>
+                <p>🌡️ 28 °C</p>
+                <p>☀️ 12 hours per day</p>
+                <p>🌧️ 2 mm per month</p>
+                <p>💧 41 % average</p>
+                <p>💨 10 mph average</p>
+            </div>
+            <div class="card">
+                <h3>September</h3>
+                <p>🌡️ 23 °C</p>
+                <p>☀️ 11 hours per day</p>
+                <p>🌧️ 24 mm per month</p>
+                <p>💧 51 % average</p>
+                <p>💨 8 mph average</p>
+            </div>
+            <div class="card">
+                <h3>October</h3>
+                <p>🌡️ 18°C</p>
+                <p>☀️ 9 hours per day</p>
+                <p>🌧️ 67 mm per month</p>
+                <p>💧 63 % average</p>
+                <p>💨 8 mph average</p>
+            </div>
+            <div class="card">
+                <h3>November</h3>
+                <p>🌡️ 13 °C</p>
+                <p>☀️ 8 hours per day</p>
+                <p>🌧️ 108 mm per month</p>
+                <p>💧 73 % average</p>
+                <p>💨 8 mph average</p>
+            </div>
+            <div class="card">
+                <h3>December</h3>
+                <p>🌡️ 8 °C</p>
+                <p>☀️ 7 hours per day</p>
+                <p>🌧️ 126 mm per month</p>
+                <p>💧 78 % average</p>
+                <p>💨 9 mph average</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> | Serdar Özden | Turkey</p>
+        <p> Last Modified on: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
